@@ -1,0 +1,13 @@
+name: Test
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: Test
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.0.0
+      # 相対パスで action.yml がある場所を指定している
+      - name: Verify hello action works
+        uses: ./

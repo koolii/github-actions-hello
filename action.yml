@@ -1,0 +1,5 @@
+# GithubActionsのメタファイル的役割
+name: "Hello Github Actions World"
+runs:
+  using: "node12"
+  main: "index.js"
