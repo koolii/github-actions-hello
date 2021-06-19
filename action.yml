@@ -1,5 +1,21 @@
 # GithubActionsのメタファイル的役割
 name: "Hello Github Actions World"
+author: "koolii"
+# Less than 125 chars
+description: "just say \"Hello World!\" Github Action on push event"
+# Parameters for this action
+# ワークフロー定義ファイル内で with でパラメータを指定
+# ↓は actions/setup-node で node-versionパラメータの定義
+# inputs:
+#   node-version:
+#     description: "Version Spec of the version to use. Example: 10.x, 10.15.1, >=10.15.0"
+#     required: false
+#     default: '10.x'
+# Write Output info as map
+# ↓は actions/cache で cache-hitパラメータの情報を定義
+# outputs:
+#   cache-hit:
+#     description: 'A boolean value to indicate an exact match was found for the primary key'
 runs:
   using: "node12"
   main: "index.js"
